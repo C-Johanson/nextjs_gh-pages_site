@@ -16,12 +16,14 @@ const About = () => {
                 </p>
                 <p className='py-2'>
                     I have spent the past ten years developing my programming skills and experience. My interest in the Sci-Fi technology found in the worlds of
-                    Star Wars and Alien is what initially led me to robotics. I taught myself the basics of C and programmed micro controllers to interface with 
-                    communication protocols like I2C and read from sensors and drive various actuators. The most complex project I completed was a drone, writing 
+                    Star Wars and Alien led me to investigate the field of robotics. I taught myself the basics of C in order to program micro controllers. These interfaced with 
+                    communication protocols like I2C and read from sensors to drive various actuators. The most complex robotics project I completed was a drone, writing 
                     the flight control system for it myself. 
                 </p>
                 <p className='py-2'>
-                    From there, 
+                    From there, my interests shifted to coding, writing mods for video games I played and experimenting with nueral networks and machine learning models.
+                    After enrolling in Cornell University College of Engineering and studied computer science. Ever since, I have been honing my skills and trying to gain as much
+                    experience as possible.
                 </p>
             </div>
             <div></div>
