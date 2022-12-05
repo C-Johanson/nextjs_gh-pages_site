@@ -61,16 +61,16 @@ const Skills = () => {
                         </ul>
                         <div className='flex flex-row h-[100%] w-[100%] top-0 absolute text-sm border-b-2 border-solid border-slate-400 z-0'>
                             <div className='relative border-r-2 border-slate-400 border-dotted w-[25%] h-full'>
-                                <p className='absolute uppercase bottom-[-15%] w-full text-center text-[.55rem] sm:text-[.8rem] md:text-[.95rem] lg:text-[1rem]'>Basic</p>
+                                <p className='absolute uppercase bottom-[-15%] w-full text-center text-[.5rem] sm:text-[.8rem] md:text-[.95rem] lg:text-[1rem]'>Basic</p>
                             </div>
                             <div className='relative border-r-2 border-slate-400 border-dotted w-[25%] h-full'>
-                                <p className='absolute uppercase bottom-[-15%] w-full text-center text-[.55rem] sm:text-[.8rem] md:text-[.95rem] lg:text-[1rem]'>Proficient</p>
+                                <p className='absolute uppercase bottom-[-15%] w-full text-center text-[.5rem] sm:text-[.8rem] md:text-[.95rem] lg:text-[1rem]'>Proficient</p>
                             </div>
                             <div className='relative border-r-2 border-slate-400 border-dotted w-[25%] h-full'>
-                                <p className='absolute uppercase bottom-[-15%] w-full text-center text-[.55rem] sm:text-[.8rem] md:text-[.95rem] lg:text-[1rem]'>Advanced</p>
+                                <p className='absolute uppercase bottom-[-15%] w-full text-center text-[.5rem] sm:text-[.8rem] md:text-[.95rem] lg:text-[1rem]'>Advanced</p>
                             </div>
                             <div className='relative w-[25%] h-full'>
-                                <p className='absolute uppercase bottom-[-15%] w-full text-center text-[.55rem] sm:text-[.8rem] md:text-[.95rem] lg:text-[1rem]'>Expert</p>
+                                <p className='absolute uppercase bottom-[-15%] w-full text-center text-[.5rem] sm:text-[.8rem] md:text-[.95rem] lg:text-[1rem]'>Expert</p>
                             </div>
                         </div>
                     </div>

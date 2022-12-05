@@ -15,15 +15,11 @@ const About = () => {
                     I have professional experience in backend development on large and complex systems.
                 </p>
                 <p className='py-2'>
-                    I have spent the past ten years developing my programming skills and experience. My interest in the Sci-Fi technology found in the worlds of
-                    Star Wars and Alien led me to investigate the field of robotics. I taught myself the basics of C in order to program micro controllers. These interfaced with 
-                    communication protocols like I2C and read from sensors to drive various actuators. The most complex robotics project I completed was a drone, writing 
-                    the flight control system for it myself. 
-                </p>
-                <p className='py-2'>
-                    From there, my interests shifted to coding, writing mods for video games I played and experimenting with nueral networks and machine learning models.
-                    After enrolling in Cornell University College of Engineering and studied computer science. Ever since, I have been honing my skills and trying to gain as much
-                    experience as possible.
+                    I have spent the past ten years developing my programming skills and experience. Growing up, I was always captivated by the technology depicted in
+                    the Sci-Fi worlds of Star Wars, Alien, and others. This fascination led to me trying to learn everything I could about the technology here in the real world.
+                    From low level communication protocols like I2C and robotics control systems like PIDs used to control the flight of a drone, to programming micro controllers
+                    and modding video games that I liked to play, I have taught myself a broad range of complex topics and concepts. At Cornell University, I enrolled as a computer science 
+                    major and continued building my skill set. I am always excited to tackle complex problems, whether I have experience in the problem space or not.
                 </p>
             </div>
             <div></div>
