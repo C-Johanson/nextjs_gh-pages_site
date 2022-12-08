@@ -36,20 +36,12 @@ const Navbar = () => {
     }
 
     const scrollToCenter = () => {
-        console.log("ACTIVE ID "+activeLinkId)
         if(!activeLinkId) return;
 
         const containerRect = containerRef.current;
         const elementRect = document.getElementById(activeLinkId);
-
-        console.log("elem left "+elementRect.offsetLeft)
-        console.log("elem width "+elementRect.offsetWidth)
-        console.log("container width "+containerRect.offsetWidth)
-
         const scrollX = elementRect.offsetLeft + (elementRect.offsetWidth/2) - (containerRect.offsetWidth/2);
-
-        console.log("Scroll X "+scrollX)
-
+        
         containerRef.current.scrollTo({ left: scrollX, behavior: 'smooth' });
     }
 
