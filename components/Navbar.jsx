@@ -1,15 +1,14 @@
-import { useContext } from 'react'
+import { useContext, useEffect, useRef } from 'react'
 import { NavContext } from '../context/NavContext'
 
 const Navbar = () => {
 
+    const containerRef = useRef(null);
+
     const { activeLinkId } = useContext(NavContext);
-    console.log(activeLinkId)
-    {/* TODO: use this active link to scroll navbar */}
+    
     const navLinks = ["Home", "About", "Education", "Experience",
      "Skills", "Contact"];
-
-    
 
     const renderNavLink = (content, index) => {
         const scrollToId = `${content.toLowerCase()}Section`;
@@ -20,6 +19,7 @@ const Navbar = () => {
         return (
             <ul key={content} className=''>
                 <li 
+                id={content} 
                 onClick={scrollTo} 
                 className={(activeLinkId===content) ?
                  'group text-sm ml-2 mr-2 px-2 uppercase border-b-2 border-red-400 bg-red-400/25 cursor-pointer'
@@ -35,15 +35,39 @@ const Navbar = () => {
         )
     }
 
+    const scrollToCenter = () => {
+        console.log("ACTIVE ID "+activeLinkId)
+        if(!activeLinkId) return;
+
+        const containerRect = containerRef.current;
+        const elementRect = document.getElementById(activeLinkId);
+
+        console.log("elem left "+elementRect.offsetLeft)
+        console.log("elem width "+elementRect.offsetWidth)
+        console.log("container width "+containerRect.offsetWidth)
+
+        const scrollX = elementRect.offsetLeft + (elementRect.offsetWidth/2) - (containerRect.offsetWidth/2);
+
+        console.log("Scroll X "+scrollX)
+
+        containerRef.current.scrollTo({ left: scrollX, behavior: 'smooth' });
+    }
+
+    useEffect(() => {
+        scrollToCenter();
+    }, [activeLinkId])
+
   return (
     
     <div className='top-[0] fixed w-full shadow-xl z-[100] bg-[#e3e3e3] p-4'>
-        <nav className='flex pb-4 flex-row justify-between items-center overflow-x-scroll scrollbar-thin scrollbar-thumb-red-400/75 scrollbar-track-slate-400/25'>
+        <nav ref={containerRef} className='flex pb-4 flex-row justify-between items-center overflow-x-scroll scrollbar-thin scrollbar-thumb-red-400/75 scrollbar-track-slate-400/25'>
             {navLinks.map((nav, index) => renderNavLink(nav, index))}
             <ul>
-                <a className=" ml-2 mr-2 px-2 uppercase border-b-2 border-[#e3e3e3] hover:border-red-400 hover:bg-red-400 hover:bg-opacity-25 hover:text-white" href={`${process.env.NEXT_PUBLIC_RESUME}/resume/ChrisJohansonResume2022.pdf`} download = "ChrisJohansonResume2022.pdf">
+                <li className="text-sm ml-2 mr-2 px-2 uppercase border-b-2 border-[#e3e3e3] hover:border-red-400 hover:bg-red-400 hover:bg-opacity-25 hover:text-white">
+                <a  href={`${process.env.NEXT_PUBLIC_RESUME}/resume/ChrisJohansonResume2022.pdf`} download = "ChrisJohansonResume2022.pdf">
                 Resume
                 </a>  
+                </li>
             </ul>
         </nav>
     </div>
