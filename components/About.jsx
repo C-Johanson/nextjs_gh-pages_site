@@ -22,7 +22,6 @@ const About = () => {
                     major and continued building my skill set. I am always excited to tackle complex problems, whether I have experience in the problem space or not.
                 </p>
             </div>
-            <div></div>
         </div>
     </div>
   )
