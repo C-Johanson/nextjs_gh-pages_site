@@ -14,7 +14,7 @@ const About = () => {
                     in the pursuit of these goals. I like to challenge myself, enjoy working with others, and excell in an agile organized development team. 
                     I have professional experience in backend development on large and complex systems.
                 </p>
-                <p className='py-2'>
+                <p className='py-2 pb-10'>
                     I have spent the past ten years developing my programming skills and experience. Growing up, I was always captivated by the technology depicted in
                     the Sci-Fi worlds of Star Wars, Alien, and others. This fascination led to me trying to learn everything I could about the technology here in the real world.
                     From low level communication protocols like I2C and robotics control systems like PIDs used to control the flight of a drone, to programming micro controllers

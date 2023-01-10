@@ -13,8 +13,8 @@ const Navbar = () => {
     const renderNavLink = (content, index) => {
         const scrollToId = `${content.toLowerCase()}Section`;
 
-        const scrollTo = () => {
-            document.getElementById(scrollToId).scrollIntoView({behavior: 'smooth'})
+        const scrollTo = async () => {
+            document.getElementById(scrollToId).scrollIntoView({behavior: 'smooth', block: 'start'})
         }
         return (
             <ul key={content} className=''>
@@ -35,6 +35,7 @@ const Navbar = () => {
         )
     }
 
+    /* TODO figure out why this kills scrollIntoView
     const scrollToCenter = () => {
         if(!activeLinkId) return;
 
@@ -48,10 +49,10 @@ const Navbar = () => {
     useEffect(() => {
         scrollToCenter();
     }, [activeLinkId])
-
+    */
   return (
     
-    <div className='top-[0] fixed w-full shadow-xl z-[100] bg-[#e3e3e3] p-4'>
+    <div className='top-[0] fixed w-full shadow-xl z-[100] bg-[#e3e3e3] p-4' id='navContainer'>
         <nav ref={containerRef} className='flex pb-4 flex-row justify-between items-center overflow-x-scroll scrollbar-thin scrollbar-thumb-red-400/75 scrollbar-track-slate-400/25'>
             {navLinks.map((nav, index) => renderNavLink(nav, index))}
             <ul>

@@ -27,7 +27,7 @@ export default function Home() {
         <link rel="icon" href={`${process.env.NEXT_PUBLIC_FAVICON}/favicon.ico`} />
       </Head>
       
-      <NavProvider>
+      <NavProvider id='navProv'>
       <Navbar />
       <section id='homeSection' ref={main}>
         <Main />
