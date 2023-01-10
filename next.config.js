@@ -7,7 +7,6 @@
     loader: 'akamai',
     path: '/',
   },
-  basePath: "/",
   assetPrefix: "/",
 };
 
