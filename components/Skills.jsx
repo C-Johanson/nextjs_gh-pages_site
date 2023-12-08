@@ -5,9 +5,9 @@ const Skills = () => {
 
     const skillsRef = useNav("Skills");
 
-    const skillsLang = [["Assembly", "75%"], ["C++", "55%"], ["CSS", "45%"],
-     ["HTML", "45%"],  ["Java", "75%"], ["JavaScript", "65%"], ["OCamel", "25%"],
-     ["Python", "65%"], ["SQL", "25%"]];
+    const skillsLang = [["Assembly", "85%"], ["C++", "60%"], ["CSS", "65%"],
+     ["HTML", "75%"],  ["Java", "75%"], ["JavaScript", "80%"], ["React", "80%"], ["OCamel", "25%"],
+     ["Python", "65%"], ["SQL", "55%"]];
 
     const skillsOther = ["Git & GitHub", "React.js", "Node.js", "Tailwind CSS", "CAD", "ROS",
      "TensorFlow", "Jupyter Notebook"];
