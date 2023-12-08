@@ -57,7 +57,7 @@ const Navbar = () => {
             {navLinks.map((nav, index) => renderNavLink(nav, index))}
             <ul>
                 <li className="text-sm ml-2 mr-2 px-2 uppercase border-b-2 border-[#e3e3e3] hover:border-red-400 hover:bg-red-400 hover:bg-opacity-25 hover:text-white">
-                <a  href={`${process.env.NEXT_PUBLIC_RESUME}/resume/ChrisJohansonResume2022.pdf`} download = "ChrisJohansonResume2022.pdf">
+                <a  href={`${process.env.NEXT_PUBLIC_RESUME}/resume/ChrisJohansonResume2022.pdf`} download = "ChrisJohansonResume2023.pdf">
                 Resume
                 </a>  
                 </li>
